@@ -6,7 +6,10 @@ import argparse
 
 app = Flask(__name__)
 
-# HTML form for input<!DOCTYPE html>
+# HTML form for input
+
+html_form = """
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,7 +49,7 @@ app = Flask(__name__)
             text-align: left;
         }
         input[type="text"] {
-            width: calc(100% - 20px);
+            width: 360px;
             padding: 12px 16px;
             margin-bottom: 20px;
             border: 1px solid #ddd;
@@ -86,8 +89,6 @@ app = Flask(__name__)
     </div>
 </body>
 </html>
-
-html_form = """
 
 
 
