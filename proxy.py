@@ -16,22 +16,26 @@ html_form = """
     <title>Proxy Interface</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
-            max-width: 500px;
-            margin: 50px auto;
+            width: 400px;
+            padding: 40px;
             background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
         h1 {
             color: #333;
+            margin-bottom: 30px;
         }
         form {
             margin-top: 20px;
@@ -39,25 +43,32 @@ html_form = """
         label {
             font-weight: bold;
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            color: #555;
         }
         input[type="text"] {
-            width: 100%;
+            width: calc(100% - 20px);
             padding: 10px;
             margin-bottom: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
             box-sizing: border-box;
             font-size: 16px;
+            outline: none;
+        }
+        input[type="text"]:focus {
+            border-color: #4CAF50;
         }
         input[type="submit"] {
             background-color: #4CAF50;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 0;
+            width: 100%;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 18px;
+            transition: background-color 0.3s;
         }
         input[type="submit"]:hover {
             background-color: #45a049;
@@ -68,16 +79,14 @@ html_form = """
     <div class="container">
         <h1>Proxy Interface</h1>
         <form action="/proxy" method="post">
-        <text>Made By Ayaan Khan (1043613lcpsorg) on github</text>
-        <text>in Development MAY NOT WORK ON SOME WEBSITES</text><br>
-        <text>Remember that setting up a proxy might have legal implications, and you should ensure that you're not violating any terms of service or policies by doing so.</text>
-            <label for="url">Enter URL:(don't forget to add https://)</label><br>
+            <label for="url">Enter URL:</label><br>
             <input type="text" id="url" name="url" placeholder="https://example.com" required><br>
             <input type="submit" value="Submit">
         </form>
     </div>
 </body>
 </html>
+
 
 """
 
