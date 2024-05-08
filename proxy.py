@@ -14,17 +14,68 @@ html_form = """
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proxy Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>Proxy Interface</h1>
-    <h1>Made By Ayaan Khan (1043613lcpsorg) IN DEVELOPMENT MAY NOT WORK CORRECTLY<h1>
-    <form action="/proxy" method="post">
-        <label for="url">Enter URL:</label><br>
-        <input type="text" id="url" name="url" style="width: 300px;"><br><br>
-        <input type="submit" value="Submit">
-    </form>
+    <div class="container">
+        <h1>Proxy Interface</h1>
+        <form action="/proxy" method="post">
+            <label for="url">Enter URL:</label><br>
+            <input type="text" id="url" name="url" placeholder="https://example.com" required><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>
+
 """
 
 # Define a function to proxy requests to the desired URL
