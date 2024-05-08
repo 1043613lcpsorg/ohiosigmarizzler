@@ -20,7 +20,7 @@ html_form = """
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
+            background-color: #f5f5f5;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -29,9 +29,9 @@ html_form = """
         .container {
             width: 400px;
             padding: 40px;
-            background: linear-gradient(to bottom, #f0f0f0, #ffffff);
+            background: #fff;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
         h1 {
@@ -49,8 +49,8 @@ html_form = """
             text-align: left;
         }
         input[type="text"] {
-            width: 360px;
-            padding: 12px 16px;
+            width: calc(100% - 32px);
+            padding: 12px;
             margin-bottom: 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
@@ -89,7 +89,6 @@ html_form = """
     </div>
 </body>
 </html>
-
 
 
 """
