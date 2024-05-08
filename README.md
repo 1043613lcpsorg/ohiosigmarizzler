@@ -43,4 +43,4 @@ Contributions are welcome! Fork the repository, make your changes, and submit a 
 
 ## Issues
 
-If you encounter any issues or have suggestions for improvement, please [open an issue](https://github.com/your-username/proxy-server/issues).
+If you encounter any issues or have suggestions for improvement, please [open an issue](https://github.com/1043613lcpsorg/ohiosigmarizzler/issues).
