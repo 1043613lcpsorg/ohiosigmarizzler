@@ -13,7 +13,7 @@ A simple proxy server with a user interface that allows you to access blocked UR
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/1043613lcpsorg/proxy-server.git
+    git clone https://github.com/1043613lcpsorg/ohiosigmarizzler.git
     cd proxy-server
     ```
 
