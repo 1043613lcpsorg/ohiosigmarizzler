@@ -14,7 +14,7 @@ A simple proxy server with a user interface that allows you to access blocked UR
 
     ```bash
     git clone https://github.com/1043613lcpsorg/ohiosigmarizzler.git
-    cd proxy-server
+    cd ohiosigmarizzler
     ```
 
 2. **Install dependencies:**
