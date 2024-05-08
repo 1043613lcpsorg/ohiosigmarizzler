@@ -69,6 +69,7 @@ html_form = """
         <h1>Proxy Interface</h1>
         <form action="/proxy" method="post">
         <text>Made By Ayaan Khan (1043613lcpsorg) on github</text>
+        <text>in Development MAY NOT WORK ON SOME WEBSITES</text><br>
             <label for="url">Enter URL:(don't forget to add https://)</label><br>
             <input type="text" id="url" name="url" placeholder="https://example.com" required><br>
             <input type="submit" value="Submit">
