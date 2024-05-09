@@ -21,12 +21,13 @@ A simple proxy server with a user interface that allows you to access blocked UR
 
     ```bash
     pip install Flask
+    pip install uwsgi
     ```
 
 3. **Run the proxy server:**
 
     ```bash
-    python proxy.py --host 127.0.0.1 --port 5000
+    uwsgi --ini uwsgi.ini
     ```
 
 4. **Open your web browser and navigate to `http://<host_ip>:<port_number>` to access the user interface.**
